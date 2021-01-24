@@ -38,12 +38,12 @@ def generate_cipher(aes_key, iv):
 
 def decrypt_password(ciphertext, secret_key):
     try:
-        #(2-a) Initialisation vector for AES decryption
+        #(3-a) Initialisation vector for AES decryption
         initialisation_vector = ciphertext[3:15]
-        #(2-b) Get encrypted password by removing suffix bytes (last 16 bits)
+        #(3-b) Get encrypted password by removing suffix bytes (last 16 bits)
         #Encrypted password is 192 bits
         encrypted_password = ciphertext[15:-16]
-        #Build the cipher to decrypt the ciphertext
+        #(4) Build the cipher to decrypt the ciphertext
         cipher = generate_cipher(secret_key, initialisation_vector)
         decrypted_pass = decrypt_payload(cipher, encrypted_password)
         decrypted_pass = decrypted_pass.decode()  
@@ -85,11 +85,13 @@ if __name__ == '__main__':
                         username = login[1]
                         ciphertext = login[2]
                         if(url!="" and username!="" and ciphertext!=""):
+                            #(3) Filter the initialisation vector & encrypted password from ciphertext 
+                            #(4) Use AES algorithm to decrypt the password
                             decrypted_password = decrypt_password(ciphertext, secret_key)
                             print("Sequence: %d"%(index))
                             print("URL: %s\nUser Name: %s\nPassword: %s\n"%(url,username,decrypted_password))
                             print("*"*50)
-                            #Check decrpyted_df for your password records 
+                            #(5) Save into CSV 
                             csv_writer.writerow([index,url,username,decrypted_password])
                     #Close database connection
                     cursor.close()

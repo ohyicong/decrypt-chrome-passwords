@@ -11,8 +11,8 @@ import shutil
 import csv
 
 #GLOBAL CONSTANT
-CHROME_PATH_LOCAL_STATE = r"%s\AppData\Local\Google\Chrome\User Data\Local State"%(os.environ['USERPROFILE'])
-CHROME_PATH = r"%s\AppData\Local\Google\Chrome\User Data"%(os.environ['USERPROFILE'])
+CHROME_PATH_LOCAL_STATE = os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data\Local State"%(os.environ['USERPROFILE']))
+CHROME_PATH = os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data"%(os.environ['USERPROFILE']))
 
 def get_secret_key():
     try:
@@ -74,8 +74,8 @@ if __name__ == '__main__':
             #Search user profile or default folder (this is where the encrypted login password is stored)
             folders = [element for element in os.listdir(CHROME_PATH) if re.search("^Profile*|^Default$",element)!=None]
             for folder in folders:
-            	#(2) Get ciphertext
-                chrome_path_login_db = r"%s\%s\Login Data"%(CHROME_PATH,folder)
+            	#(2) Get ciphertext from sqlite database
+                chrome_path_login_db = os.path.normpath(r"%s\%s\Login Data"%(CHROME_PATH,folder))
                 conn = get_db_connection(chrome_path_login_db)
                 if(secret_key and conn):
                     cursor = conn.cursor()

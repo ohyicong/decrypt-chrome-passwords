@@ -14,13 +14,14 @@ If you have an idea for improvement, do let me know!<br>
 
 ## Usage
 1. python decrypt_chrome_password.py<br>
+or
 2. Click on decrypt_chrome_password.exe 
 
 ## Output
 Saved as decrypted_password.csv
 
 ## Medium
-To understand the how this exploit works, read my medium article.
+To understand the how this exploit works, read my medium article. <br>
 https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d
 
 

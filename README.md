@@ -13,9 +13,9 @@ If you have an idea for improvement, do let me know!<br>
 4. win32crypt
 
 ## Usage
-python decrypt_chrome_password.py<br>
-or<br>
-click on decrypt_chrome_password.exe 
+There are two methods to execute the program.<br>
+1. python decrypt_chrome_password.py<br>
+2. click on decrypt_chrome_password.exe 
 
 ## Output
 Saved as decrypted_password.csv

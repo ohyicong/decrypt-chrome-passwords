@@ -8,9 +8,9 @@ If you have an idea for improvement, do let me know!<br>
 
 ## Dependencies (see requirements)
 1. sqlite
-2. AES
+2. pycryptodomex
 3. csv
-4. win32crypt
+4. pywin32
 
 ## Usage
 There are two methods to execute the program.<br>

@@ -20,7 +20,7 @@ python decrypt_chrome_password.py<br>
 Saved as decrypted_password.csv
 
 ## Medium
-To understand the how this exploit works, read my medium article. <br>
+To understand the how this program works, read my medium article. <br>
 https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d
 
 

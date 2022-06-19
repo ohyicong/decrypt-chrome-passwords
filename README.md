@@ -14,8 +14,7 @@ If you have an idea for improvement, do let me know!<br>
 
 ## Usage
 There are two methods to execute the program.<br>
-1. python decrypt_chrome_password.py<br>
-2. click on decrypt_chrome_password.exe 
+python decrypt_chrome_password.py<br>
 
 ## Output
 Saved as decrypted_password.csv

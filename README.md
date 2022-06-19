@@ -1,5 +1,5 @@
 # Decrypt Chrome Passwords
-A simple program to decrypt chrome password saved on your target machine. <br>
+A simple program to decrypt chrome password saved on your machine. <br>
 This code has only been tested on windows, so it may not work on other OS.<br>
 If you have an idea for improvement, do let me know!<br>
 
@@ -8,9 +8,9 @@ If you have an idea for improvement, do let me know!<br>
 
 ## Dependencies (see requirements)
 1. sqlite
-2. AES
+2. pycryptodomex
 3. csv
-4. win32crypt
+4. pywin32
 
 ## Usage
 There are two methods to execute the program.<br>

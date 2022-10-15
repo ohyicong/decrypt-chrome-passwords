@@ -1,4 +1,3 @@
-sqlite
 pycryptodomex
-csv
+python-csv
 pywin32

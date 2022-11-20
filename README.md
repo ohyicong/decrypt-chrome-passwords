@@ -9,11 +9,9 @@ If you have an idea for improvement, do let me know!<br>
 ## Dependencies (see requirements)
 1. sqlite
 2. pycryptodomex
-3. csv
-4. pywin32
+3. pywin32
 
 ## Usage
-There are two methods to execute the program.<br>
 python decrypt_chrome_password.py<br>
 
 ## Output

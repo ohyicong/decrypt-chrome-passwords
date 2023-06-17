@@ -99,6 +99,4 @@ if __name__ == '__main__':
                     #Delete temp login db
                     os.remove("Loginvault.db")
     except Exception as e:
-        print("[ERR] "%str(e))
-        
-        
+        print("[ERR] %s"%str(e))

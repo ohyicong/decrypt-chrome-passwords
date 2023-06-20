@@ -1,2 +1,7 @@
+altgraph==0.17.3
+pefile==2023.2.7
 pycryptodomex==3.18.0
+pyinstaller==5.12.0
+pyinstaller-hooks-contrib==2023.3
 pywin32==306
+pywin32-ctypes==0.2.1

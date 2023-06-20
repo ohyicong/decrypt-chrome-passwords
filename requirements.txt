@@ -1,3 +1,7 @@
-sqlite=3.33.0=h2a8f88b_0
-pycryptodomex=3.10.1=pypi_0
-pywin32=227=py38he774522_1
+altgraph==0.17.3
+pefile==2023.2.7
+pycryptodomex==3.18.0
+pyinstaller==5.12.0
+pyinstaller-hooks-contrib==2023.3
+pywin32==306
+pywin32-ctypes==0.2.1

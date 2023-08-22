@@ -9,8 +9,6 @@ from Cryptodome.Cipher import AES
 import shutil
 import csv
 
-# HOW TO RUN
-# python script.py LocalState LoginData
 # Configuration
 CHROME_PATH_LOCAL_STATE = None
 CHROME_PATH_LOGIN_DATA = None

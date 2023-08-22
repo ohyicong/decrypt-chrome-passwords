@@ -1,3 +1,0 @@
-sqlite=3.33.0=h2a8f88b_0
-pycryptodomex=3.10.1=pypi_0
-pywin32=227=py38he774522_1

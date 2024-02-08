@@ -10,15 +10,23 @@ If you have an idea for improvement, do let me know!<br>
 1. sqlite
 2. pycryptodomex
 3. pywin32
+   
+### You can find **Login Data** file that contains The Encrypted Passwords in
+```
+%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default
+```
+
+### You can find **Local State** file that contain The Encryption Keys in
+```
+%USERPROFILE%\AppData\Local\Google\Chrome\User Data
+```
 
 ## Usage
-python decrypt_chrome_password.py<br>
-
+```python
+python decrypt_chrome_password.py [login data] [login state]
+```
 ## Output
 Saved as decrypted_password.csv
 
-## Medium
-To understand the how this program works, read my medium article. <br>
-https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d
 
 
